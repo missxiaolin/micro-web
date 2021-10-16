@@ -163,4 +163,8 @@ store.subscribe((newValue, oldValue) => {
 
 ## demo 测试
 
-[链接](https://github.com/missxiaolin/micro-app)
+[demo测试地址](https://github.com/missxiaolin/micro-app)
+
+## 发布平台
+
+[微前端发布平台](https://github.com/missxiaolin/micro-platform)
