@@ -161,6 +161,18 @@ store.subscribe((newValue, oldValue) => {
 })
 ~~~
 
+## 全局状态管理
+
+~~~
+export { createStore } from './store/index'
+~~~
+
+## 应用间通讯
+
+~~~
+window.microCustom
+~~~
+
 ## demo 测试
 
 [demo测试地址](https://github.com/missxiaolin/micro-app)
