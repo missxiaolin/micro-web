@@ -160,3 +160,7 @@ store.subscribe((newValue, oldValue) => {
   console.log(newValue, oldValue, '---')
 })
 ~~~
+
+## demo 测试
+
+[链接](https://github.com/missxiaolin/micro-app)
