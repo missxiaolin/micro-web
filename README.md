@@ -210,7 +210,3 @@ window.microCustom
 ## demo 测试
 
 [demo测试地址](https://github.com/missxiaolin/micro-app)
-
-## 发布平台
-
-[微前端发布平台](https://github.com/missxiaolin/micro-platform)
