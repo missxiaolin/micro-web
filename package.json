@@ -1,5 +1,5 @@
 {
-  "name": "micro",
+  "name": "xl-micro",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/missxiaolin/micro-web.git"
   },
-  "author": "",
+  "author": "xiaolin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/missxiaolin/micro-web/issues"
