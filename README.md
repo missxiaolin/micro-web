@@ -1,4 +1,83 @@
 # micro-web
+
+## 安装包
+
+~~~
+npm i xl-micro --save
+~~~
+
+## 导入
+
+~~~
+import { registerMicroApps, start } from 'xl-micro'
+
+export const registerApp = (list) => {
+    // 注册子应用
+    registerMicroApps(list, {
+        beforeLoad: [
+            () => {
+                loading.changeLoading(true)
+                // console.log('主应用开始加载')
+            }
+        ],
+        mounted: [
+            () => {
+                loading.changeLoading(false)
+                // console.log('主应用渲染完成')
+            }
+        ],
+        destroyed: [
+            () => {
+                // console.log('主应用卸载完成')    
+            }
+        ]
+    })
+    start()
+}
+~~~
+
+## 路由
+
+~~~
+export const subNavList = [
+    {
+        name: 'vac',
+        activeRule: '/vac',
+        container: '#micro-container',
+        entry: '//localhost:9004/',
+        appInfo
+    },
+    {
+        name: 'mac',
+        activeRule: '/mac',
+        container: '#micro-container',
+        entry: '//localhost:9005/',
+        appInfo
+    },
+    {
+        name: 'mad',
+        activeRule: '/mad',
+        container: '#micro-container',
+        entry: '//localhost:9006/',
+        appInfo
+    },
+    {
+        name: 'sad',
+        activeRule: '/sad',
+        container: '#micro-container',
+        entry: '//localhost:9002/',
+        appInfo
+    },
+    {
+        name: 'acc',
+        activeRule: '/acc',
+        container: '#micro-container',
+        entry: '//localhost:9003/',
+        appInfo
+    }
+]
+~~~
+
 ## css 样式隔离
 
 - css modules
